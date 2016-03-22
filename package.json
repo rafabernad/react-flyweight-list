@@ -1,0 +1,24 @@
+{
+  "name": "react-flyweight-list",
+  "version": "0.0.1",
+  "description": "A Flyweight list component for React",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafabernad/react-flyweight-list.git"
+  },
+  "keywords": [
+    "react",
+    "list",
+    "flyweight"
+  ],
+  "author": "Rafa Bernad",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rafabernad/react-flyweight-list/issues"
+  },
+  "homepage": "https://github.com/rafabernad/react-flyweight-list#readme",
+  "main": "src/flyweight-list.js"
+}
