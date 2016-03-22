@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sample App</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+  </head>
+  <style>
+  	#root {
+  		position: absolute;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+  		overflow-y: auto;
+  	}
+  	#scroll > * {
+  		height: 45px;
+		padding: 14px 5px;
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+		box-sizing: border-box;
+	}
+  </style>
+  <body>
+    <div id='root'>
+    	<div id="scroll">
+    	</div>
+    </div>
+    <script>
+    	function reqListener () {
+		  var entries = JSON.parse(this.response);
+
+		  for(var i = 0; i < entries.length; i++) {
+		  	var node = document.createElement('div');
+		  	//node.classList.add("");
+		  	var nodeContent = document.createTextNode("Item " + i); 
+  			node.appendChild(nodeContent);
+  			document.getElementById("scroll").appendChild(node);
+		  }
+		}
+
+		var oReq = new XMLHttpRequest();
+		oReq.addEventListener("load", reqListener);
+		oReq.open("GET", "/sample-data.json");
+		oReq.setRequestHeader("Content-Type", "application\/json");
+		oReq.send();
+    </script>
+
+  </body>
+</html>
+
+
