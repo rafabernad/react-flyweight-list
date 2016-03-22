@@ -1,0 +1,6 @@
+{
+  "name": "React FlyweightList",
+  "tagline": "A React list component that uses a Flyweight pattern to render its content",
+  "body": "### React FlyweightList Component Demos\r\nThis site provides links to demonstrate the React FlyweightList component.\r\n\r\n[Here](https://github.com/contact) you will find a demo of appending 10.000 elements on a document, and [here](https://github.com/contact) the same 10.000 elements loaded using the React Flyweight component.\r\n\r\nTo better appreciate the difference, head on to the pages with your mobile device",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
