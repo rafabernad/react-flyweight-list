@@ -1,8 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Sample App</title>
-    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weight List Demo</title>
     <meta name="viewport" content="width=device-width, user-scalable=no">
   </head>
   <style>
@@ -41,7 +40,7 @@
 
 		var oReq = new XMLHttpRequest();
 		oReq.addEventListener("load", reqListener);
-		oReq.open("GET", "/sample-data.json");
+		oReq.open("GET", "/react-flyweight-list/demos/sample-data.json");
 		oReq.setRequestHeader("Content-Type", "application\/json");
 		oReq.send();
     </script>
