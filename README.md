@@ -1,2 +1,4 @@
 # react-flyweight-list
-A list for React that uses a Flyweight pattern to render its content
+
+A React component that uses a Flyweight pattern to render its content.
+
